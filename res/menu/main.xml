@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/qrobot" android:icon="@drawable/ic_action_qrobot" android:showAsAction="always" android:title="@string/qrobot_label" android:titleCondensed="@string/qrobot" android:visible="true"></item>
+    
+
+</menu>

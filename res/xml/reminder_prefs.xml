@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/set_reminder">
+    <CheckBoxPreference android:key="reminder_enabled"
+        android:persistent="false"
+        android:title="@string/enable_reminder" />
+    <EditTextPreference android:key="reminder_name"
+        android:persistent="false"
+        android:title="@string/reminder_name"
+        android:dialogTitle="@string/reminder_name" />
+    <Preference android:key="reminder_date"
+        android:persistent="false"
+        android:title="@string/reminder_date"/>
+    <Preference android:key="reminder_time"
+        android:persistent="false"
+        android:title="@string/reminder_time"/>
+
+    <EditTextPreference android:key="reminder_content"
+        android:persistent="false"
+        android:title="@string/reminder_content"
+        android:dialogTitle="@string/reminder_content" />
+
+</PreferenceScreen>

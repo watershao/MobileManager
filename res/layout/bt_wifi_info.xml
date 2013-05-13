@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+     
+    <TextView
+      android:id="@+id/wifi_signal"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="20dip"
+      android:layout_marginRight="20dip"
+      android:text="@string/wifi_signal"
+      android:textAppearance="@android:style/TextAppearance.Medium"
+    />
+    <TextView
+      android:id="@+id/wifi_signal_info"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="20dip"
+      android:layout_marginRight="20dip"
+      android:textAppearance="@android:style/TextAppearance.Small"
+    />
+    <TextView
+      android:id="@+id/wifi_password"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="20dip"
+      android:layout_marginRight="20dip"
+      android:text="@string/wifi_password"
+      android:textAppearance="@android:style/TextAppearance.Medium"
+    />
+    <EditText
+      android:id="@+id/wifi_password_edit"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="20dip"
+      android:layout_marginRight="20dip"
+      android:capitalize="none"
+      android:password="true"
+      android:textAppearance="@android:style/TextAppearance.Medium"  
+    />
+    <CheckBox android:id="@+id/wifi_show_password"
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content"  
+      android:layout_marginLeft="20dip"
+      android:layout_marginRight="20dip"
+      android:textSize="14sp"
+      android:text="@string/wifi_show_password" />
+    
+</LinearLayout>

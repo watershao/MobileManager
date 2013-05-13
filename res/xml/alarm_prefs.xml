@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/set_alarm">
+    <CheckBoxPreference android:key="enabled"
+        android:persistent="false"
+        android:title="@string/enable_alarm" />
+    <Preference android:key="time"
+        android:persistent="false"
+        android:title="@string/time"/>
+    <com.qrobot.mobilemanager.clock.RepeatPreference
+        android:persistent="false"
+        android:key="setRepeat"
+        android:title="@string/alarm_repeat" />
+<!--     <com.qrobot.mobilemanager.clock.AlarmPreference
+        android:key="alarm"
+        android:title="@string/alert"
+        android:ringtoneType="alarm"
+        android:persistent="false"
+        android:showDefault="false"
+        android:showSilent="true" /> -->
+     <com.qrobot.mobilemanager.clock.RingPreference
+        android:key="alarm"
+        android:title="@string/alert"
+        android:persistent="false"
+ 		/>   
+    <CheckBoxPreference android:key="vibrate"
+        android:persistent="false"
+        android:title="@string/alarm_vibrate"/> 
+    <com.qrobot.mobilemanager.clock.AlarmNumberPreference
+        android:key="number"
+		android:persistent="false"   
+		android:title="@string/alarm_number"     
+        ></com.qrobot.mobilemanager.clock.AlarmNumberPreference>
+    <com.qrobot.mobilemanager.clock.AlarmIntervalPreference
+        android:key="interval"
+		android:persistent="false"   
+		android:title="@string/alarm_interval"     
+        ></com.qrobot.mobilemanager.clock.AlarmIntervalPreference>
+    <EditTextPreference android:key="label"
+        android:persistent="false"
+        android:title="@string/label"
+        android:dialogTitle="@string/label" />
+
+</PreferenceScreen>

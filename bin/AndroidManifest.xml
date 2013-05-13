@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qrobot.mobilemanager"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    
+        <!-- android:theme="@style/AppTheme" --> 
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:configChanges="orientation|screenSize|screenLayout"
+        android:theme="@style/Theme.Sherlock.Light.DarkActionBar"
+        android:uiOptions="splitActionBarWhenNarrow" >
+        <activity
+            android:name="com.qrobot.mobilemanager.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- bluetooth -->
+        <activity android:name="com.qrobot.mobilemanager.bt.BluetoothActivity"
+                  android:label="@string/app_name"
+                  android:configChanges="orientation|keyboardHidden">
+        </activity>
+        <activity android:name="com.qrobot.mobilemanager.bt.DeviceListActivity" 
+            	  android:uiOptions="splitActionBarWhenNarrow"
+                  android:label="@string/select_device"
+                  android:theme="@android:style/Theme.Holo.Dialog"
+                  android:configChanges="orientation|keyboardHidden" />
+                <!-- 蓝牙通信服务 -->
+        <service
+            android:name="com.qrobot.mobilemanager.bt.BluetoothService">
+            <intent-filter>
+                <action android:name="com.qrobot.mobilemanager.bt.BluetoothService" />
+            </intent-filter>
+        </service>
+        
+        <provider android:name="com.qrobot.mobilemanager.clock.AlarmProvider"
+                android:authorities="com.qrobot.mobilemanager.clock"
+                android:exported="false" />
+        
+        <activity android:name="com.qrobot.mobilemanager.clock.SetAlarm" android:label="@string/set_alarm"
+        	android:configChanges="orientation|keyboardHidden|keyboard|navigation" />
+       
+        <activity android:name="com.qrobot.mobilemanager.reminder.SetReminder" android:label="@string/set_reminder"
+        	android:configChanges="orientation|keyboardHidden|keyboard|navigation" />
+        <activity android:name="com.qrobot.mobilemanager.pet.SetPet" android:label="@string/set_pet"
+        	android:configChanges="orientation|keyboardHidden|keyboard|navigation" />
+        
+       <activity android:name="com.qrobot.mobilemanager.photo.ViewPhoto" android:label="@string/photo_view"
+        	android:configChanges="orientation|keyboardHidden|keyboard|navigation" />
+        
+       <activity android:name="com.qrobot.mobilemanager.photo.ImageViewer" android:label="@string/photo_view"
+        	android:configChanges="orientation|keyboardHidden|keyboard|navigation" />
+       
+       <service android:enabled="true" android:name="com.qrobot.mobilemanager.netty.QRClientService" >
+			<intent-filter>
+				<action android:name="com.qrobot.mobilemanager.netty.QRClientService" />
+			</intent-filter>
+	</service>
+    </application>
+
+</manifest>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string-array name="menu_names">
+        <item>蓝牙</item>
+        <item>闹钟</item>
+        <item>提醒</item>
+        <item>激活</item>
+        <item>宠物属性</item>
+        <item>图片管理</item>
+    </string-array>
+    <string-array name="menu_imgs">
+        <item>@drawable/menu_bluetooth</item>
+        <item>@drawable/menu_alarm</item>
+        <item>@drawable/menu_reminder</item>
+        <item>@drawable/menu_activate</item>
+        <item>@drawable/menu_features</item>
+        <item>@drawable/menu_photo</item>
+    </string-array>
+    
+    <string-array name="menu_two_names">
+        <item>特性</item>
+        <item>设置</item>
+        <item>退出</item>
+    </string-array>
+    <string-array name="menu_two_imgs">
+        <item>@drawable/menu_features</item>
+        <item>@drawable/menu_setup</item>
+        <item>@drawable/menu_finish</item>
+    </string-array>
+    
+    
+    <string-array name="alarm_set">
+	    <item msgid="5163476010406761625">"已将此闹钟设置为从现在起不到 1 分钟后提醒。"</item>
+	    <item msgid="7110525731259629055">"已将此闹钟设置为从现在起 <xliff:g id="DAYS">%1$s</xliff:g>后再提醒。"</item>
+	    <item msgid="7003982794086186185">"已将此闹钟设置为从现在起 <xliff:g id="HOURS">%2$s</xliff:g>后再提醒。"</item>
+	    <item msgid="7311021123230077742">"已将此闹钟设置为从现在起 <xliff:g id="DAYS">%1$s</xliff:g> <xliff:g id="HOURS">%2$s</xliff:g>后再提醒。"</item>
+	    <item msgid="8431715191823114872">"已将此闹钟设置为从现在起 <xliff:g id="MINUTES">%3$s</xliff:g>后再提醒。"</item>
+	    <item msgid="3244151088673185428">"已将此闹钟设置为从现在起 <xliff:g id="DAYS">%1$s</xliff:g> <xliff:g id="MINUTES">%3$s</xliff:g>后再提醒。"</item>
+	    <item msgid="3663661342600168814">"已将此闹钟设置为从现在起 <xliff:g id="HOURS">%2$s</xliff:g> <xliff:g id="MINUTES">%3$s</xliff:g>后再提醒。"</item>
+	    <item msgid="7779544127785487304">"已将该闹钟设置为从现在起 <xliff:g id="DAYS">%1$s</xliff:g> <xliff:g id="HOURS">%2$s</xliff:g> <xliff:g id="MINUTES">%3$s</xliff:g>后再提醒。"</item>
+    </string-array>
+ 
+
+    
+    <string-array name="photo_muti_operate">
+        <item>查看</item>
+        <item>删除</item>
+        <item>共享</item>
+        <item>详情</item>
+    </string-array>
+</resources>

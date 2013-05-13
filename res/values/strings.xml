@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">MobileManager</string>
+    <string name="hello_world">欢迎来到小Q手机管理程序</string>
+    <string name="menu_settings">Settings</string>
+    
+    <!-- login -->
+    <string name="edit_login">请输入本机ID (1~4)</string>
+    <string name="login_success">"登陆成功，你现在可以查看设置小Q闹钟，提醒，图片等信息"</string>
+    <string name="login_fail">"登陆失败，请重试！"</string>
+    
+    <string name="bluetooth">蓝牙设置</string>
+    <string name="alarm">闹钟</string>
+    <string name="reminder">提醒</string>
+    <string name="activite">激活</string>
+    <string name="features">特性</string>
+	<string name="setup">设置</string>
+	<string name="logout">退出</string>
+	
+	
+	<string name="qrobot">Qrobot</string>
+    <string name="qrobot_label">SlidingMenu on Qrobot</string>
+	
+	<string name="about">关于</string>
+    <string name="licenses">许可证</string>
+    <string name="contact">联系我们</string>
+    
+    
+    <!-- bluetooth -->
+    
+        <!--  BluetoothChat -->
+    <string name="send">发送</string>
+    <string name="not_connected">你没有连接到一个设备</string>
+    <string name="bt_not_enabled_leaving">蓝牙设备没有打开，离开蓝牙控</string>
+    <string name="title_connecting">正在连接中。。。</string>
+    <string name="title_connected_to">连接到设备  <xliff:g id="device_name">%1$s</xliff:g></string>
+    <string name="title_not_connected">没有连接</string>
+
+    <string name="searchbluetooth">搜索蓝牙设备</string>
+    <!--  DeviceListActivity -->
+    <string name="scanning">扫描周围可发现的设备中...</string>
+    <string name="select_device">选择一个设备进行连接</string>
+    <string name="none_paired">没有已配对的设备</string>
+    <string name="none_found">找不到可发现的设备</string>
+    <string name="title_paired_devices">已配对的设备</string>
+    <string name="title_other_devices">其他可用的设备</string>
+    <string name="button_scan">扫描可发现的设备</string>
+
+    <!-- Options Menu -->
+    <string name="secure_connect">以安全方式连接设备</string>
+    <string name="insecure_connect">以一般方式连接设备</string>
+    <string name="discoverable">使设备被发现</string>
+    
+    <string name="channel_connect">扫描设备</string>
+        <!-- wifi -->
+    <string name="openwifi">打开wifi</string>
+    <string name="closewifi">关闭wifi</string>
+    <string name="scanwifi">扫描wifi热点</string>
+    <string name="getwifi">获取wifi热点</string>
+    <string name="changchat">切换聊天界面</string>
+    <string name="closebluetooth">关闭蓝牙</string>
+    
+    <string name="wifi_state_prompt">当前WiFi状态：</string>
+    <string name="wifi_state_getting">WiFi状态获取中。。。</string>
+    <string name="current_state">请先连接蓝牙设备</string>
+    <string name="getwifi_state">刷新WiFi状态</string>
+
+    
+    <string name="wifi_signal">信号强度</string>
+    <string name="wifi_password">密码</string>
+    <string name="wifi_show_password">显示密码</string>
+    <string name="wifi_cancel">取消</string>
+    <string name="wifi_connect">连接</string>
+    
+    
+    
+    <!-- 设置闹钟 -->
+    
+    <string name="add_alarm">"添加小Q闹钟"</string>
+    <string name="refresh_alarm">"刷新"</string>
+    <string name="upload_alarm">"上传"</string>
+    <string name="label">"名称"</string>
+    <string name="desk_clock_button_description">"时钟显示"</string>
+    <string name="default_label">"闹钟"</string>
+    <string name="menu_desk_clock">"座钟"</string>
+    <string name="menu_edit_alarm" >"修改闹钟设置"</string>
+    <string name="enable_alarm">"启用闹钟"</string>
+    <string name="delete_alarm">"取消闹钟"</string>
+    <string name="disable_alarm">"停用闹钟"</string>
+    <string name="delete_alarm_confirm">"将会取消此闹钟。"</string>
+    <string name="alarm_notify_snooze_label">"<xliff:g id="LABEL">%s</xliff:g>（已暂停）"</string>
+    <string name="alarm_repeat">"重复"</string>
+    <string name="alarm_vibrate">"振动"</string>
+    <string name="alarm_number">"响铃次数"</string>
+    <string name="alarm_interval">"响铃间隔"</string>
+    <string name="alert">"铃声"</string>
+    <string name="time">"时间"</string>
+    <string name="set_alarm">"设置闹钟"</string>
+    
+    <string name="alarm_done">"完成"</string>
+    <string name="alarm_revert">"还原"</string>
+    <string name="alarm_delete">"删除闹钟"</string>
+    <string name="silent_alarm_summary">"静音"</string>
+    
+    
+    <string name="day">"1 天"</string>
+    <string name="days">"<xliff:g id="DAYS">%s</xliff:g> 天"</string>
+    <string name="hour">"1 小时"</string>
+    <string name="hours" msgid="2071487018566991613">"<xliff:g id="HOURS">%s</xliff:g> 小时"</string>
+    <string name="minute">"1 分钟"</string>
+    <string name="minutes">"<xliff:g id="MINUTES">%s</xliff:g> 分钟"</string>
+    <string name="every_day">"每天"</string>
+    <string name="never">"一律不"</string>
+    <string name="day_concat">", "</string>
+    <string name="clock_instructions">"选择要显示的时钟。"</string>
+    <string name="analog_gadget">"模拟时钟"</string>
+    <string name="settings">"设置"</string>
+    <string name="alarm_in_silent_mode_title">"静音模式下闹钟响"</string>
+    <string name="alarm_in_silent_mode_summary">"手机处于静音模式时，闹钟仍会响"</string>
+    <string name="snooze_duration_title">"再响间隔"</string>
+    
+    
+    <!-- reminder -->
+    <string name="add_reminder">"添加小Q日程提醒"</string>
+    <string name="refresh_reminder">"刷新"</string>
+    <string name="upload_reminder">"上传"</string>
+    <string name="set_reminder">"设置提醒"</string>
+    <string name="reminder_done">"完成"</string>
+    <string name="reminder_delete">"删除提醒"</string>
+    
+    <string name="enable_reminder">"启用提醒"</string>
+    <string name="reminder_name">"名称"</string>
+    <string name="reminder_date">"日期"</string>
+    <string name="reminder_time">"时间"</string>
+    <string name="reminder_content">"内容"</string>
+    
+    <string name="delete_reminder">"取消提醒"</string>
+    <string name="delete_reminder_confirm">"将会取消此提醒。"</string>
+    
+    
+    
+    <!-- pet settings -->
+    
+    <string name="pet_nickname">"小Q"</string>
+    <string name="pet_information_set">"我的资料设置"</string>
+    
+    <string name="pet_save">"保存设置"</string>
+    <string name="pet_cancel">"取消"</string>
+    
+    <string name="set_pet">"设置宠物属性"</string>
+    <string name="pet_set_nickname">"昵称"</string>
+    <string name="pet_set_portrait">"头像"</string>
+    
+    <!-- photo manager -->
+    <string name="photo_view">"查看图片"</string>
+    <string name="photo_describ">"欢迎来到小Q图片管理"</string>
+    
+    <string name="photo_mutioperate">操作</string>
+    
+    
+</resources>
